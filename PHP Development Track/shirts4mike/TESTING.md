@@ -12,7 +12,6 @@ HOME
 - Homepage renders correctly
 - Clean URL in address bar
 - Clean URLs in outbound links
-- 
 
 SHIRTS
 - Page renders correctly (32 shirts total; 4 shirts per row)

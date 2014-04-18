@@ -16,9 +16,8 @@ TODO:
 
 Add additional features completed during the "Enhancing a Simple PHP Application" Project
 
-- Contact and search form error validation
-- Clean URLs via subfolders and htaccess rewrite rules
-- Basic MVC architecture (model code on its own page; controller and view code share another page,
-	but are separated from each other)
-- Basic search by title functionality
+- ~~Contact and search form error validation~~ (04/17/14)
+- ~~Clean URLs via subfolders and htaccess rewrite rules~~ (04/17/14)
+- ~~Basic MVC architecture (model code on its own page; controller and view code share another page, but are separated from each other)~~ (04/17/14)
+- ~~Basic search by title functionality~~ (04/17/14)
 - Pagination
