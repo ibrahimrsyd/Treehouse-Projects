@@ -1,0 +1,18 @@
+RewriteEngine On
+#rule has two parts
+#first is the url the browser is requesting
+#second is what should happen when this pattern is found
+RewriteRule ^shirts/$  shirts/shirts.php
+RewriteRule ^shirts/([0-9]+)/$ shirts/shirt.php?id=$1
+
+#Redirecting old web address
+RewriteRule ^receipt.php$ /shirts4mike_local/receipt/ [R=301]
+RewriteRule ^contact.php$ /shirts4mike_local/contact/ [R=301]
+RewriteRule ^shirts.php$ /shirts4mike_local/shirts/ [R=301]
+
+#Rewrite rule for trailing slashes
+RewriteRule ^(shirts/[0-9]+)$ /shirts4mike_local/$1/ [R=301]
+
+#Redirecting the individual shirt pages with rewrite conditionals
+RewriteCond %{QUERY_STRING} ^id=([0-9]+)$
+RewriteRule ^shirt.php$ /shirts4mike_local/shirts/%1/? [R=301]
