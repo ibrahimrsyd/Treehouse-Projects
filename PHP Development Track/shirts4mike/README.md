@@ -21,3 +21,8 @@ Add additional features completed during the "Enhancing a Simple PHP Application
 - ~~Basic MVC architecture (model code on its own page; controller and view code share another page, but are separated from each other)~~ (04/17/14)
 - ~~Basic search by title functionality~~ (04/17/14)
 - Pagination
+- Convert product data from array to database
+- Upgrade shirt.php to pull info from T-shirt database
+- Secure site against SQL injection attacks
+- Using LIMIT to handle pagination
+- Demo announcement via lightbox
