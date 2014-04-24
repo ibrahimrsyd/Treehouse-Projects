@@ -1,6 +1,6 @@
 <?php
 
-	require_once("../includes/config.php");
+	require_once("../inc/config.php");
 
 	if ($_SERVER["REQUEST_METHOD"] == "POST") {
 		//Capture data from $_POST variable
@@ -28,7 +28,7 @@
 		}
 
 		//Include PHPMailer Library and validate email field format
-		require_once(ROOT_PATH . "includes/phpmailer/class.phpmailer.php");
+		require_once(ROOT_PATH . "inc/lib/phpmailer/class.phpmailer.php");
 		$mail = new PHPMailer();
 
 		if (!isset($error_message) AND !$mail -> ValidateAddress($email)) {
@@ -76,7 +76,7 @@
 	$pageTitle = "Contact Mike";
 	$section = "contact";
 	//Include header
-	include(ROOT_PATH . 'includes/header.php'); 
+	include(ROOT_PATH . 'inc/view/header.php'); 
 ?>
 
 
@@ -149,5 +149,5 @@
 
 <?php 
 	//Adding the footer
-	include(ROOT_PATH . "includes/footer.php"); 
+	include(ROOT_PATH . "inc/view/footer.php"); 
 ?>

@@ -2,13 +2,13 @@
 	$pageTitle = "Unique T-Shirts Designed By a Frog";
 	$section = "";
 	//Include config and header files
-	require_once("includes/config.php");
-	include(ROOT_PATH . "includes/products.php");
+	require_once("inc/config.php");
+	include(ROOT_PATH . "inc/model/products.php");
 	//IMPORTANT: Even though it is in a view file
 	//this line of code is CONTROLLER CODE because
 	//it calls the recent shirt data from the model.
 	$recent = get_products_recent();
-	include(ROOT_PATH . "includes/header.php"); 
+	include(ROOT_PATH . "inc/view/header.php"); 
 ?>
 
 
@@ -35,6 +35,7 @@
 
 				<ul class="products">
 					<?php
+						include(ROOT_PATH . "inc/view/single-tshirt-list-view.html.php");
 						$list_view_html = "";
 						foreach($recent as $product) {
 								$list_view_html = get_list_view_html($product) . $list_view_html;
@@ -49,5 +50,5 @@
 
 	<?php 
 		//Adding the footer
-		include(ROOT_PATH . "includes/footer.php"); 
+		include(ROOT_PATH . "inc/view/footer.php"); 
 	?>

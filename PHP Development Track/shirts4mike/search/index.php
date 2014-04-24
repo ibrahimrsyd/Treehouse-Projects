@@ -1,5 +1,5 @@
 <?php
-	require_once("../includes/config.php");
+	require_once("../inc/config.php");
 
 	//***************START OF CONTROLLER CODE****************//
 	$search_term = "";
@@ -16,7 +16,7 @@
 			//function which contains the search logic.
 			
 			// 1) including the model file
-			require_once(ROOT_PATH . "includes/products.php" );
+			require_once(ROOT_PATH . "inc/model/products.php" );
 
 			// 2) calling a function which contains the 
 			// search logic.
@@ -30,7 +30,7 @@
 
 	$pageTitle = "Search";
 	$section = "search";
-	include(ROOT_PATH . "includes/header.php"); ?>
+	include(ROOT_PATH . "inc/view/header.php"); ?>
 
 		<div class="section shirts search page">
 
@@ -44,6 +44,7 @@
 				</form>
 
 				<?php
+					include(ROOT_PATH . "inc/view/single-tshirt-list-view.html.php");
 					if ($search_term != "") {
 						if (!empty($products)) {
 							echo '<ul class="products">';
@@ -61,4 +62,4 @@
 
 		</div>
 
-	<?php include(ROOT_PATH . "includes/footer.php"); ?>
+	<?php include(ROOT_PATH . "inc/view/footer.php"); ?>

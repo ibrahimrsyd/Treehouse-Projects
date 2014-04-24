@@ -16,3 +16,5 @@ RewriteRule ^(shirts/[0-9]+)$ /shirts4mike_local/$1/ [R=301]
 #Redirecting the individual shirt pages with rewrite conditionals
 RewriteCond %{QUERY_STRING} ^id=([0-9]+)$
 RewriteRule ^shirt.php$ /shirts4mike_local/shirts/%1/? [R=301]
+RewriteCond %{QUERY_STRING} ^(s=[a-z]+)$
+RewriteRule ^search/index.php$ /shirts4mike_local/search/?%1 [R=301]

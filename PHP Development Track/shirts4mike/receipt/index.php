@@ -1,11 +1,11 @@
 <?php
 
-require_once("../includes/config.php");
+require_once("../inc/config.php");
 
 
 $pageTitle = "Thank you for your order!";
 $section = "none";
-include(ROOT_PATH . "includes/header.php"); ?>
+include(ROOT_PATH . "inc/view/header.php"); ?>
 
 	<div class="section page">
 
@@ -20,4 +20,4 @@ include(ROOT_PATH . "includes/header.php"); ?>
 	
 	</div>
 
-<?php include(ROOT_PATH . "includes/footer.php"); ?>
+<?php include(ROOT_PATH . "inc/view/footer.php"); ?>

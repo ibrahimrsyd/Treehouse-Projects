@@ -1,7 +1,7 @@
 <?php
 	//Include product array data 
-	require_once("../includes/config.php");
-	require_once(ROOT_PATH . 'includes/products.php');
+	require_once("../inc/config.php");
+	require_once(ROOT_PATH . 'inc/model/products.php');
 	$products = get_products_all();
 
 	/*Two things happening here:
@@ -33,7 +33,7 @@
 
 	$section = "shirts";
 	$pageTitle = $product["name"];
-	include(ROOT_PATH . "includes/header.php"); ?>
+	include(ROOT_PATH . "inc/view/header.php"); ?>
 
 		<div class="section page">
 
@@ -84,4 +84,4 @@
 
 		</div>
 
-	<?php include(ROOT_PATH . "includes/footer.php"); ?>
+	<?php include(ROOT_PATH . "inc/view/footer.php"); ?>
