@@ -18,15 +18,11 @@ Add additional features completed during the "Enhancing a Simple PHP Application
 - ~~Clean URLs via subfolders and htaccess rewrite rules~~ (04/17/14)
 - ~~Basic MVC architecture (model code on its own page; controller and view code share another page, but are separated from each other)~~ (04/17/14)
 - ~~Basic search by title functionality~~ (04/17/14)
-<<<<<<< HEAD
-- ~~Pagination~~ (4/24/14)
 - ~~Testing checklist located in root~~ (4/24/14)
-=======
-- Pagination on the t-shirt directory page
+- ~~Pagination on the t-shirt directory page~~ (04/24/14)
 - Convert product data from array to database
 - Upgrade shirt.php to pull info from T-shirt database
 - Secure site against SQL injection attacks
 - Using LIMIT to handle pagination
 - Demo announcement via lightbox
 - Pagination on the search page
->>>>>>> 52a06c342d4d09cbfcf1b9ec4d9d3efda881f00e
